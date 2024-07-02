@@ -26,9 +26,9 @@ android {
     // Add this block to handle duplicate files
     packagingOptions {
         // Option 1: Pick the first occurrence and ignore the rest
-        pickFirst 'META-INF/LICENSE.md'
+        pickFirst 'META-INF/LICENSE-notice.md'
         // Option 2: Exclude the file completely (uncomment if needed)
-        // exclude 'META-INF/LICENSE.md'
+        exclude 'META-INF/LICENSE.md'
     }
 }
 

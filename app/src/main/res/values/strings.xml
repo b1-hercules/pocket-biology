@@ -19,4 +19,36 @@
         <item>Perempuan</item>
         <item>Laki-Laki</item>
     </string-array>
+    <string name="konten_teks">
+        <![CDATA[
+             1. Kromosom
+            - Konsep Kromosom: Kromosom adalah struktur yang terdiri dari DNA dan protein yang ditemukan di dalam inti sel. Mereka membawa informasi genetik yang diperlukan untuk pertumbuhan, perkembangan, dan fungsi organisme.
+            - Struktur Kromosom: Terdiri dari DNA yang membungkus sekitar protein histon, membentuk struktur yang disebut nukleosom. Kromosom dapat dilihat dalam bentuk paling terkondensasi selama pembelahan sel.
+            - Jenis-Jenis Kromosom: Ada berbagai jenis kromosom berdasarkan posisi sentromer, seperti metasentrik, submetasentrik, akrosentrik, dan telosentrik.
+            - Penulisan Rumus Kromosom: Rumus kromosom menunjukkan jumlah dan jenis kromosom dalam sel. Misalnya, 46,XX untuk wanita dan 46,XY untuk pria.
+            - Tabel Kromosom Spesies Lain: Berbagai spesies memiliki jumlah kromosom yang berbeda, seperti Drosophila melanogaster (buah buahan) dengan 8 kromosom dan Oryza sativa (padi) dengan 24 kromosom.
+
+             2. Gen
+            - Konsep Gen: Gen adalah unit dasar warisan yang terletak pada kromosom, terdiri dari urutan DNA yang mengodekan informasi untuk sintesis protein atau RNA.
+            - Struktur Gen: Terdiri dari daerah pengkodean (eksion) yang dibatasi oleh daerah tidak pengkodean (introns) dan diatur oleh promotor.
+            - Sifat Gen: Gen menunjukkan sifat seperti dominan, resesif, kodominan, dan interaksi genetik lainnya yang menentukan ekspresi fenotipik.
+
+             3. DNA
+            - Konsep dan Sifat DNA: DNA (Deoxyribonucleic Acid) adalah molekul yang menyimpan informasi genetik. Ia memiliki struktur ganda heliks dan stabil dalam menyimpan informasi.
+            - Struktur DNA: Terdiri dari dua untai polinukleotida yang terpilin membentuk heliks ganda, dengan pasangan basa adenin (A) dengan timin (T) dan sitosin © dengan guanin (G).
+            - Jenis Replikasi DNA: Semi-konservatif, di mana setiap untai baru mengandung satu untai lama dan satu untai yang baru disintesis.
+            - Jenis Enzim dalam Replikasi DNA: DNA polimerase, helikase, ligase, dan primase adalah beberapa enzim utama yang terlibat dalam replikasi DNA.
+
+             4. RNA
+            - Konsep RNA: RNA (Ribonucleic Acid) adalah molekul yang terlibat dalam sintesis protein dan proses genetik lainnya.
+            - Struktur RNA: RNA adalah untai tunggal yang terdiri dari ribonukleotida, dengan uracil (U) menggantikan timin (T).
+            - Jenis RNA: mRNA (messenger RNA), tRNA (transfer RNA), dan rRNA (ribosomal RNA) adalah tiga jenis utama yang terlibat dalam sintesis protein.
+
+             5. Sintesis Protein
+            - Konsep Sintesi Protein (Transkripsi & Translasi): Proses pembuatan protein dari informasi genetik. Transkripsi mengubah DNA menjadi mRNA dan translasi mengubah mRNA menjadi rantai asam amino protein.
+            - Kode Genetik: Urutan basa pada DNA atau RNA yang menentukan urutan asam amino dalam protein. Setiap tiga basa (kodon) mengkode satu asam amino.
+            - Sifat-Sifat Rantai DNA: Kedua rantai DNA berfungsi dalam kodifikasi genetik, namun hanya satu rantai yang digunakan sebagai templat untuk transkripsi.
+            - Contoh Sintesis Protein dengan Kode Genetik: Urutan genetik ATG pada DNA yang mengkode untuk metionin, sering merupakan kodon awal untuk sintesis protein.
+        ]]>
+    </string>
 </resources>

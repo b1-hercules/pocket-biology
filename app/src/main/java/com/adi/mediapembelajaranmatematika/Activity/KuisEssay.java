@@ -31,6 +31,8 @@ public class KuisEssay extends AppCompatActivity {
     private ImageView btn_kembali;
     private EditText edt_jawaban;
     private Button btn_kirimjawban;
+    private TextView tv_jawabanBenar;
+    private Button btn_next_soal;
     private FirebaseAuth auth;
     private DatabaseReference reference;
     int x = 0;
@@ -44,6 +46,20 @@ public class KuisEssay extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kuis_essay);
         init();
+
+        // Inisialisasi TextView Jawaban Benar
+        tv_jawabanBenar = findViewById(R.id.tv_jawabanBenar);
+
+        // Inisialisasi Button Next Soal
+        btn_next_soal = findViewById(R.id.btn_next_soal);
+        btn_next_soal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setKontent(); // Menyiapkan soal selanjutnya
+                btn_next_soal.setVisibility(View.GONE); // Sembunyikan tombol next setelah diklik
+                btn_kirimjawban.setVisibility(View.VISIBLE); // Tampilkan kembali tombol kirim jawaban
+            }
+        });
     }
 
     private void init() {
@@ -88,22 +104,41 @@ public class KuisEssay extends AppCompatActivity {
     }
 
     private void chekJawaban() {
-        if (!edt_jawaban.getText().toString().isEmpty()) {
-            if (edt_jawaban.getText().toString().equals(jawaban)) {
-                skor = skor + 20;
-                tv_skorEssay.setText("" + skor);
-                Toast.makeText(this, "Jawaban Benar", Toast.LENGTH_SHORT).show();
-                setKontent();
-            } else {
-                tv_skorEssay.setText("" + skor);
-                Toast.makeText(this, "Jawaban Salah", Toast.LENGTH_SHORT).show();
-                setKontent();
+        String jawabanUser = edt_jawaban.getText().toString().toLowerCase(); // Mengambil dan memproses jawaban pengguna
+        boolean jawabanBenar = false;
+
+        // Periksa setiap kata kunci dalam array kunci jawaban untuk pertanyaan saat ini
+        for (String kataKunci : kuisEssayModels.getKunciJawaban(x-1)) { // x-1 karena x sudah diincrement di setKontent()
+            if (jawabanUser.contains(kataKunci.toLowerCase())) {
+                jawabanBenar = true;
+                break; // Keluar dari loop jika sudah menemukan satu kata kunci
             }
+        }
+
+        if (jawabanBenar) {
+            skor += 20; // Atau sistem penilaian lain sesuai kebutuhan
+            Toast.makeText(this, "Jawaban yang benar adalah: " + jawaban, Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(this, "Jawaban yang benar adalah: " + jawaban, Toast.LENGTH_SHORT).show();
+        }
+        tv_skorEssay.setText("" + skor);
+        //setKontent(); // Menyiapkan konten soal berikutnya atau menyelesaikan kuis
+
+        // Setelah mengecek jawaban, tampilkan jawaban yang benar
+        tv_jawabanBenar.setText("Jawaban yang benar: " + jawaban);
+        tv_jawabanBenar.setVisibility(View.VISIBLE); // Pastikan TextView terlihat
+
+        // Sembunyikan tombol kirim jawaban dan tampilkan tombol next
+        btn_kirimjawban.setVisibility(View.GONE);
+        if (x <= arr) {
+            btn_next_soal.setVisibility(View.VISIBLE);
         }
     }
 
+
     private void setKontent() {
         edt_jawaban.setText(null);
+        tv_jawabanBenar.setVisibility(View.GONE);
         arr = kuisEssayModels.pertanyaan.length;
         if (x >= arr) {
             String jumlahSkor = String.valueOf(skor);

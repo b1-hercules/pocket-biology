@@ -25,6 +25,8 @@ import com.google.firebase.database.FirebaseDatabase;
 
 import com.jstarczewski.pc.mathview.src.MathView;
 
+import java.util.Arrays;
+
 public class KuisPilihanGanda extends AppCompatActivity {
 
     private ImageView btn_kembali;
@@ -166,33 +168,33 @@ public class KuisPilihanGanda extends AppCompatActivity {
             if (pilihanJawaban1.getText().toString().equals(jawaban)) {
                 skor = skor + 10;
                 tv_skor.setText("" + skor);
-                Toast.makeText(this, "Jawaban Benar", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "Jawaban yang benar adalah: " + jawaban, Toast.LENGTH_LONG).show();
                 setKontentsoal();
             } else {
                 tv_skor.setText("" + skor);
-                Toast.makeText(this, "Jawaban Salah", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "Jawaban yang benar adalah: " + jawaban, Toast.LENGTH_LONG).show();
                 setKontentsoal();
             }
         } else if (pilihanJawaban2.isChecked()) {
             if (pilihanJawaban2.getText().toString().equals(jawaban)) {
                 skor = skor + 10;
                 tv_skor.setText("" + skor);
-                Toast.makeText(this, "Jawaban Benar", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "Jawaban yang benar adalah: " + jawaban, Toast.LENGTH_LONG).show();
                 setKontentsoal();
             } else {
                 tv_skor.setText("" + skor);
-                Toast.makeText(this, "Jawaban Salah", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "Jawaban yang benar adalah: " + jawaban, Toast.LENGTH_LONG).show();
                 setKontentsoal();
             }
         } else if (pilihanJawaban3.isChecked()) {
             if (pilihanJawaban3.getText().toString().equals(jawaban)) {
                 skor = skor + 10;
                 tv_skor.setText("" + skor);
-                Toast.makeText(this, "Jawaban Benar", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "Jawaban yang benar adalah: " + jawaban, Toast.LENGTH_LONG).show();
                 setKontentsoal();
             } else {
                 tv_skor.setText("" + skor);
-                Toast.makeText(this, "Jawaban Salah", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "Jawaban yang benar adalah: " + jawaban, Toast.LENGTH_LONG).show();
                 setKontentsoal();
             }
 
@@ -200,11 +202,11 @@ public class KuisPilihanGanda extends AppCompatActivity {
             if (pilihanJawaban4.getText().toString().equals(jawaban)) {
                 skor = skor + 10;
                 tv_skor.setText("" + skor);
-                Toast.makeText(this, "Jawaban Benar", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "Jawaban yang benar adalah: " + jawaban, Toast.LENGTH_LONG).show();
                 setKontentsoal();
             } else {
                 tv_skor.setText("" + skor);
-                Toast.makeText(this, "Jawaban Salah", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "Jawaban yang benar adalah: " + jawaban, Toast.LENGTH_LONG).show();
                 setKontentsoal();
             }
         }

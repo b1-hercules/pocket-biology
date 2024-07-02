@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -8,10 +10,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity
+            android:name=".Activity.WebPageActivity"
+            android:exported="false" />
         <activity android:name=".Activity.Hasil" />
         <activity android:name=".Activity.DaftarNilaiEssay" />
         <activity android:name=".Activity.DaftarNilaiPilGan" />
-        <activity android:name=".Activity.KuisEssay" />
+<!--        <activity android:name=".Activity.KuisEssay" />-->
         <activity android:name=".Activity.KuisPilihanGanda" />
         <activity android:name=".Activity.CaraPenggunaan" />
         <activity android:name=".Activity.Kuis" />
@@ -21,7 +26,8 @@
         <activity android:name=".Activity.OtpGenerate" />
         <activity android:name=".Activity.MenuUtama" />
         <activity android:name=".Activity.LoginPhone" />
-        <activity android:name=".Activity.MainActivity"
+        <activity
+            android:name=".Activity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

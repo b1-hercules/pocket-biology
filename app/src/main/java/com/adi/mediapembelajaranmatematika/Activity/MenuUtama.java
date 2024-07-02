@@ -18,7 +18,7 @@ import com.adi.mediapembelajaranmatematika.R;
 public class MenuUtama extends AppCompatActivity {
 
     private ImageView btn_logout;
-    private CardView btn_kompetensi_dasar, btn_materi, btn_kuis, btn_nilai, btn_penggunaan;
+    private CardView btn_kompetensi_dasar, btn_materi, btn_kuis, btn_nilai, btn_penggunaan, btn_tanya_ai;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,6 +66,14 @@ public class MenuUtama extends AppCompatActivity {
             public void onClick(View v) {
                 startActivity(new Intent(MenuUtama.this, CaraPenggunaan.class));
 
+            }
+        });
+
+        btn_tanya_ai = findViewById(R.id.btn_tanya_ai);
+        btn_tanya_ai.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MenuUtama.this, WebPageActivity.class));
             }
         });
     }

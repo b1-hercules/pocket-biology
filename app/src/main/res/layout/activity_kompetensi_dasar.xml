@@ -70,9 +70,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/roboto_medium"
                     android:layout_marginTop="10dp"
-                    android:text="1.Menjelaskan matriks dan kesamaan matriks dengan menggunakan masalah kontekstual dan melakukan operasi pada matriks yang meliputi penjumlahan, pengurangan, perkalian skalar, perklaian serta transpos.
-\n\n2.Menyelesaikan masalah kontekstual yang berkaitan dengan matriks dan operasinya.
-"
+                    android:text="1. Menjelaskan konsep dasar genetika, seperti kromosom, DNA, gen, alel, dan variasi genetik.\n\n2. Menganalisis pola pewarisan sifat monohibrid, dihibrid, dan polihibrid dengan menggunakan hukum Mendel, tabel silang, dan peta kromosom.\n\n3. Menjelaskan mekanisme mutasi, rekombinasi, dan transformasi genetik pada prokariot dan eukariot.\n\n4. Menjelaskan prinsip dan aplikasi bioteknologi, seperti rekayasa genetik, kloning, transgenik, dan terapi gen.\n\n5. Menilai dampak sosial, etis, dan lingkungan dari perkembangan ilmu genetika dan bioteknologi."
                     android:textSize="18sp" />
             </LinearLayout>
         </LinearLayout>

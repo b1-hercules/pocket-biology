@@ -116,7 +116,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="5dp"
                         android:fontFamily="@font/roboto_medium"
-                        android:text="\tMenu Cara Penggunaan: digunakan untuk menampilkan cara penggunaan aplikasi media pembelajaran matematika matriks."
+                        android:text="\tMenu Cara Penggunaan: digunakan untuk menampilkan cara penggunaan aplikasi media pembelajaran Pocket Biology."
                         android:textSize="12sp" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>

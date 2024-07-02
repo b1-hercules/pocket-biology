@@ -22,7 +22,7 @@
             android:layout_marginEnd="30dp"
             android:layout_marginBottom="5dp"
             android:fontFamily="@font/roboto_medium"
-            android:text="Media Pembelajaran Matematika Matriks"
+            android:text="Media Pembelajaran Biologi Genetika"
             android:textAlignment="center"
             android:textColor="@color/colorWhite"
             android:textSize="20sp" />
@@ -140,7 +140,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="16dp"
                                 android:fontFamily="@font/roboto_medium"
-                                android:text="Materi Matematika"
+                                android:text="Materi Biologi"
                                 android:lines="2"
                                 android:textColor="@color/colorBlack"
                                 android:textSize="14sp"
@@ -188,7 +188,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="16dp"
                                 android:fontFamily="@font/roboto_medium"
-                                android:text="Kuis Matematika"
+                                android:text="Kuis Biologi"
                                 android:lines="2"
                                 android:textStyle="bold"
                                 android:textColor="@color/colorBlack"
@@ -256,6 +256,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
+                    android:gravity="center"
                     android:orientation="vertical">
 
                     <androidx.cardview.widget.CardView
@@ -290,6 +291,53 @@
                                 android:layout_marginTop="16dp"
                                 android:fontFamily="@font/roboto_medium"
                                 android:text="Petunjuk Penggunaan"
+                                android:lines="2"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="14sp"
+                                android:textStyle="bold"/>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/btn_tanya_ai"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:clickable="true"
+                        app:cardBackgroundColor="@color/colorPurple"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="5dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/bg_oval"
+                                android:padding="5dp"
+                                android:src="@drawable/ic_play" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="16dp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="Tanya AI pocket"
                                 android:lines="2"
                                 android:textColor="@color/colorBlack"
                                 android:textSize="14sp"

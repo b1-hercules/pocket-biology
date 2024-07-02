@@ -55,7 +55,7 @@
             android:layout_marginStart="10dp"
             android:layout_marginBottom="10dp"
             android:fontFamily="@font/roboto_medium"
-            android:text="Kuis Matematika"
+            android:text="Kuis Biologi"
             android:textColor="@color/colorWhite"
             android:textSize="18sp" />
 

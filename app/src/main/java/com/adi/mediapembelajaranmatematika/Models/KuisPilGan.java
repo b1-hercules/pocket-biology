@@ -7,230 +7,66 @@ public class KuisPilGan {
     public KuisPilGan() {
     }
 
-    public String pertanyaan[] = {
-            "1.\tDiketahui matriks" +
-                    "$$K = " +
-                    "    \\begin{bmatrix}\n" +
-                    "    4 & 3 \\\\\n" +
-                    "    2 & 2 \\\\\n" +
-                    "    1 & 9 \\" +
-                    "    \\end{bmatrix}\n" +
-                    "$$ " +
-                    "maka matriks K disebut….",
-            "2.\tMatriks A = [22 19 14 12] disebut matriks….",
-            "3.\tMatriks berikut yang merupakan matriks identitas adalah….",
-            "4.\tJumlah elemen-elemen diagonal utama matriks" +
-                    "$$P =" +
-                    "    \\begin{pmatrix}\n" +
-                    "    5 & 1 & 0 \\\\\n" +
-                    "    4 & -10 & 3 \\\\\n" +
-                    "    3 & -2 & 1 \\" +
-                    "    \\end{pmatrix}\n" +
-                    "$$ " +
-                    "adalah….",
-            "5.\tDiketahui matriks " +
-                    "$$" +
-                    "    \\begin{pmatrix}\n" +
-                    "    2 & b-1 & 0 \\\\\n" +
-                    "    0 & 1 & 0 \\\\\n" +
-                    "    a+b & 2a+b & 3 \\" +
-                    "    \\end{pmatrix}\n" +
-                    "$$ " +
-                    "adalah matriks diagonal. Nilai a,b,dan c berturut turut adalah….",
-            "6.\tDiketahui matriks" +
-                    "$$A = " +
-                    "    \\begin{pmatrix}\n" +
-                    "    -1 & 0 \\\\\n" +
-                    "    3 & 8 \\" +
-                    "    \\end{pmatrix}\n" +
-                    "$$" +
-                    "\ndan" +
-                    "$$B = " +
-                    "    \\begin{pmatrix}\n" +
-                    "    0 & 9 \\\\\n" +
-                    "    6 & -7 \\" +
-                    "    \\end{pmatrix}\n" +
-                    "$$ " +
-                    "Jika  A-B = C, maka matriks $$C^{t}$$….",
-            "7.\tDiketahui matriks segitiga atas " +
-                    "$$C = " +
-                    "    \\begin{pmatrix}\n" +
-                    "    1 & 2 & 3 \\\\\n" +
-                    "    y-1 & 5 & 7 \\\\\n" +
-                    "    0 & x-4y & 6 \\" +
-                    "    \\end{pmatrix}\n" +
-                    "$$ " +
-                    "Nilai x yang memenuhi adalah….",
-            "8.\tDiketahui persamaan matriks" +
-                    "$$" +
-                    "    \\begin{pmatrix}\n" +
-                    "    a & 4 \\\\\n" +
-                    "    -1 & c \\" +
-                    "    \\end{pmatrix}\n" +
-                    "$$" +
-                    " + " +
-                    "$$" +
-                    "    \\begin{pmatrix}\n" +
-                    "    c & b \\\\\n" +
-                    "    d & -3 \\" +
-                    "    \\end{pmatrix}\n" +
-                    "$$ = " +
-                    "$$" +
-                    "    \\begin{pmatrix}\n" +
-                    "    1 & -3 \\\\\n" +
-                    "    3 & 4 \\" +
-                    "    \\end{pmatrix}\n" +
-                    "$$ " +
-                    "$$" +
-                    "    \\begin{pmatrix}\n" +
-                    "    0 & 1 \\\\\n" +
-                    "    1 & 0 \\" +
-                    "    \\end{pmatrix}\n" +
-                    "$$ " +
-                    "Nilai a + b + c + d =....",
-            "9.\tTentukan matriks " +
-                    "$$A =" +
-                    "    \\begin{pmatrix}\n" +
-                    "    3 & -1 & 2 \\\\\n" +
-                    "    0 & 6 & 4 \\\\\n" +
-                    "    1 & 5 & 1 \\" +
-                    "    \\end{pmatrix}\n" +
-                    "$$ dan Matriks " +
-                    "$$B= " +
-                    "    \\begin{pmatrix}\n" +
-                    "    -3 & -1 & 2 \\\\\n" +
-                    "    0 & 6 & 4 \\\\\n" +
-                    "    1 & -5 & -1 \\" +
-                    "    \\end{pmatrix}\n" +
-                    "$$" +
-                    " Tentukanlah A + B dari soal tersebut!",
-            "10.\tTentukan matriks P = (10 7 3) dan matriks Q = (5 4 1) Tentkanlah hasil dari P-Q!"
-
+    public String[] pertanyaan = {
+            "1. Apa fungsi utama DNA dalam sel?",
+            "2. Alel yang dominan akan menunjukkan efeknya ketika hadir dalam jumlah...",
+            "3. Hukum segregasi Mendel menjelaskan bahwa...",
+            "4. Dalam persilangan dihibrid, rasio fenotipik yang diharapkan menurut hukum Mendel adalah...",
+            "5. Mutasi yang terjadi pada satu basa nitrogen dalam DNA disebut...",
+            "6. Proses memindahkan gen dari satu organisme ke organisme lain disebut...",
+            "7. Organisme yang mengandung DNA dari spesies lain disebut...",
+            "8. Apa tujuan utama dari terapi gen?",
+            "9. Salah satu dampak etis dari bioteknologi genetika adalah...",
+            "10. Prinsip dasar rekayasa genetik melibatkan..."
     };
+
     public String pilihanjawaban[][] = {
-            {
-                    "A.\tDiagonal",
-                    "B.\tNol",
-                    "C.\tKolom",
-                    "D.\tSegitiga"
-            },
-            {
-                    "A.\tDiagonal",
-                    "B.\tNol",
-                    "C.\tKolom",
-                    "D.\tBaris"
-            },
-            {
-                    "[1\t\t\t1]" +
-                            "\n[0\t\t\t0]",
-                    "[1\t\t\t0]" +
-                            "\n[1\t\t\t0]",
-                    "[0\t\t\t1]" +
-                            "\n[1\t\t\t0]",
-                    "[1\t\t\t0]" +
-                            "\n[0\t\t\t1]"
-            },
-            {
-                    "A.\t18",
-                    "B.\t15",
-                    "C.\t4",
-                    "D.\t-4"
-            },
-            {
-                    "A.\t2, 1 dan -2",
-                    "B.\t-1, 1 dan 2",
-                    "C.\t-1, 1 dan 2",
-                    "D.\t-2, 1 dan 2"
-            },
-            {
-                    "[1\t\t\t\t3]" +
-                            "\n[9\t\t\t15]",
-                    "[-1\t\t\t-3]" +
-                            "\n[-9\t\t\t\t1]",
-                    "[-1\t\t\t-3]" +
-                            "\n[\t9\t\t\t\t-1]",
-                    "[-1\t\t\t.3]" +
-                            "\n[-9\t\t-15]"
-            },
-            {
-                    "A.\t4",
-                    "B.\t2",
-                    "C.\t1",
-                    "D.\t0"
-            },
-            {
-                    "A.\t-7",
-                    "B.\t-5",
-                    "C.\t1",
-                    "D.\t3"
-            },
-            {
-                    "[3\t\t-1\t\t\t2]" +
-                            "\n[0\t\t\t6\t\t\t4]" +
-                            "\n[1\t\t\t5\t\t\t1]",
-                    "[-3\t\t-1\t\t\t\t2]" +
-                            "\n[\t0\t\t\t.6\t\t\t\t4]" +
-                            "\n[\t1\t\t\t-5\t\t\t-1]",
-                    "[0\t\t\t-2\t\t\t4]" +
-                            "\n[0\t\t\t12\t\t\t8]" +
-                            "\n[2\t\t\t.0\t\t\t0]",
-                    "[\t0\t\t\t\t4\t\t\t-2]" +
-                            "\n[12\t\t\t8\t\t\t\t0]" +
-                            "\n[\t0\t\t\t\t2\t\t\t\t0]"
-            },
-            {
-                    "A.\t(5 3 1)",
-                    "B.\t(-5 3 2)",
-                    "C.\t(2 1 1)",
-                    "D.\t(6 3 9)"
-            }
-
+            {"A. Membantu dalam proses pencernaan", "B. Menghasilkan energi untuk sel", "C. Menyimpan informasi genetik", "D. Melindungi sel dari kerusakan fisik"},
+            {"A. Satu saja", "B. Dua atau lebih", "C. Tiga atau lebih", "D. Empat atau lebih"},
+            {"A. Pasangan alel dipisahkan selama pembentukan gamet", "B. Keturunan mendapat satu faktor dari setiap orang tua", "C. Sifat-sifat dapat diwariskan secara independen", "D. Mutasi dapat mempengaruhi pewarisan sifat"},
+            {"A. 3:1", "B. 9:3:3:1", "C. 1:2:1", "D. 1:1"},
+            {"A. Inversi", "B. Duplikasi", "C. Translokasi", "D. Mutasi titik"},
+            {"A. Kloning", "B. Rekombinasi DNA", "C. Transkripsi", "D. Translasi"},
+            {"A. Mutan", "B. Heterozigot", "C. Transgenik", "D. Homozigot"},
+            {"A. Mengubah sifat fisik organisme", "B. Mengobati penyakit genetik", "C. Meningkatkan produksi pertanian", "D. Membuat organisme lebih tahan terhadap penyakit"},
+            {"A. Meningkatkan efisiensi energi", "B. Mempertanyakan hak paten atas material genetik", "C. Mempercepat proses evolusi", "D. Mengurangi diversitas genetik"},
+            {"A. Penyilangan antar spesies yang berbeda secara alami", "B. Penggunaan antibiotik dalam pangan", "C. Memotong dan menyambung DNA untuk menciptakan DNA rekombinan", "D. Mengubah urutan basa nitrogen tanpa mempengaruhi gen"}
     };
 
-    public String jawabanbenar[] = {
-            "C.\tKolom",
-            "D.\tBaris",
-            "[1\t\t\t0]" +
-                    "\n[0\t\t\t1]",
-            "D.\t-4",
-            "C.\t-1, 1 dan 2",
-            "[-1\t\t\t\t3]" +
-                    "\n[-9\t\t\t-15]",
-            "A.\t4",
-            "D.\t3",
-            "[0\t\t\t-2\t\t\t\t4]" +
-                    "\n[0\t\t\t12\t\t\t8]" +
-                    "\n[2\t\t\t\t0\t\t\t0]",
-            "A.\t(5 3 1)"
+    public String[] jawabanbenar = {
+            "C. Menyimpan informasi genetik",
+            "A. Satu saja",
+            "A. Pasangan alel dipisahkan selama pembentukan gamet",
+            "B. 9:3:3:1",
+            "D. Mutasi titik",
+            "B. Rekombinasi DNA",
+            "C. Transgenik",
+            "B. Mengobati penyakit genetik",
+            "B. Mempertanyakan hak paten atas material genetik",
+            "C. Memotong dan menyambung DNA untuk menciptakan DNA rekombinan"
     };
 
     public String getSoal(int x) {
-        String soal = pertanyaan[x];
-        return soal;
+        return pertanyaan[x];
     }
 
     public String getPilihanJawaban1(int x) {
-        String jawaban1 = pilihanjawaban[x][0];
-        return jawaban1;
+        return pilihanjawaban[x][0];
     }
 
     public String getPilihanJawaban2(int x) {
-        String jawaban2 = pilihanjawaban[x][1];
-        return jawaban2;
+        return pilihanjawaban[x][1];
     }
 
     public String getPilihanJawaban3(int x) {
-        String jawaban3 = pilihanjawaban[x][2];
-        return jawaban3;
+        return pilihanjawaban[x][2];
     }
 
     public String getPilihanJawaban4(int x) {
-        String jawaban4 = pilihanjawaban[x][3];
-        return jawaban4;
+        return pilihanjawaban[x][3];
     }
 
     public String getJawabanbenar(int x) {
-        String jawaban = jawabanbenar[x];
-        return jawaban;
+        return jawabanbenar[x];
     }
 }
