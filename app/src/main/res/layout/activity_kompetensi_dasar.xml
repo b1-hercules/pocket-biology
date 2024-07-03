@@ -59,7 +59,7 @@
             android:elevation="6dp"
             android:orientation="vertical">
 
-            <LinearLayout
+           <!-- <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -72,7 +72,12 @@
                     android:layout_marginTop="10dp"
                     android:text="1. Menjelaskan konsep dasar genetika, seperti kromosom, DNA, gen, alel, dan variasi genetik.\n\n2. Menganalisis pola pewarisan sifat monohibrid, dihibrid, dan polihibrid dengan menggunakan hukum Mendel, tabel silang, dan peta kromosom.\n\n3. Menjelaskan mekanisme mutasi, rekombinasi, dan transformasi genetik pada prokariot dan eukariot.\n\n4. Menjelaskan prinsip dan aplikasi bioteknologi, seperti rekayasa genetik, kloning, transgenik, dan terapi gen.\n\n5. Menilai dampak sosial, etis, dan lingkungan dari perkembangan ilmu genetika dan bioteknologi."
                     android:textSize="18sp" />
-            </LinearLayout>
+            </LinearLayout>-->
+            <com.github.barteksc.pdfviewer.PDFView
+                android:layout_marginTop="20dp"
+                android:id="@+id/pdfView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
         </LinearLayout>
 
     </LinearLayout>
