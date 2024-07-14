@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Activity.Materi">
 
     <androidx.appcompat.widget.Toolbar
@@ -97,126 +98,12 @@
                     android:textColor="@color/colorBlack"
                     android:textSize="18sp" />
 
-              <!-- Tambahkan list Button disini -->
-
-                <Button
-                    android:id="@+id/btn_dashboard"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@android:color/transparent"
-                    android:text="Dashboard"
-                    android:drawableLeft="@drawable/ic_external_link"
-                    android:layout_gravity="start"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="10dp"/>
-                <Button
-                    android:id="@+id/btn_materi_genetik"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@android:color/transparent"
-                    android:text="Materi Genetik"
-                    android:drawableLeft="@drawable/ic_external_link"
-                    android:layout_gravity="start"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="10dp"/>
-                <Button
-                    android:id="@+id/btn_kromosom"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@android:color/transparent"
-                    android:text="Kromosom"
-                    android:drawableLeft="@drawable/ic_external_link"
-                    android:layout_gravity="start"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="10dp"/>
-
-                <Button
-                    android:id="@+id/btn_dna"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@android:color/transparent"
-                    android:text="DNA"
-                    android:drawableLeft="@drawable/ic_external_link"
-                    android:layout_gravity="start"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="10dp"/>
-
-                <Button
-                    android:id="@+id/btn_rna"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@android:color/transparent"
-                    android:text="RNA"
-                    android:drawableLeft="@drawable/ic_external_link"
-                    android:layout_gravity="start"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="10dp"/>
-
-                <Button
-                    android:id="@+id/btn_gen_dan_alel"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@android:color/transparent"
-                    android:text="Gen dan Alel"
-                    android:drawableLeft="@drawable/ic_external_link"
-                    android:layout_gravity="start"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="10dp"/>
-
-                <Button
-                    android:id="@+id/btn_sintesis_protein"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@android:color/transparent"
-                    android:text="Sintesis Protein"
-                    android:drawableLeft="@drawable/ic_external_link"
-                    android:layout_gravity="start"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="10dp"/>
-
-                <Button
-                    android:id="@+id/btn_pewarisan_sifat"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@android:color/transparent"
-                    android:text="Pewarisan Sifat"
-                    android:drawableLeft="@drawable/ic_external_link"
-                    android:layout_gravity="start"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="10dp"/>
-
-                <Button
-                    android:id="@+id/btn_pautan"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@android:color/transparent"
-                    android:text="Pautan"
-                    android:drawableLeft="@drawable/ic_external_link"
-                    android:layout_gravity="start"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="10dp"/>
-
-                <Button
-                    android:id="@+id/btn_hereditas"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@android:color/transparent"
-                    android:text="Hereditas"
-                    android:drawableLeft="@drawable/ic_external_link"
-                    android:layout_gravity="start"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="10dp"/>
-
-                <Button
-                    android:id="@+id/btn_mutasi"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@android:color/transparent"
-                    android:text="Mutasi"
-                    android:drawableLeft="@drawable/ic_external_link"
-                    android:layout_gravity="start"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="10dp"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv"
+                    tools:listitem="@layout/list_item_view"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
 
             </LinearLayout>
 

@@ -2,21 +2,26 @@ package com.adi.mediapembelajaranmatematika.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.webkit.WebSettings;
+import android.widget.ProgressBar;
 
 import com.adi.mediapembelajaranmatematika.R;
 
 public class WebPageActivity extends AppCompatActivity {
-
+    private String url = "https://flowise-e0qx.onrender.com/chatbot/c096e4b6-c68d-4b9a-9637-aa01b647df66";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_web_page);
-
+        if (getIntent().hasExtra("url")) {
+            url = getIntent().getStringExtra("url");
+        }
+        ProgressBar   progressBar = findViewById(R.id.progress_bar);
         final WebView webView = (WebView) findViewById(R.id.webview_ai);
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true); // Enable JavaScript execution, required for some web pages
@@ -34,6 +39,13 @@ public class WebPageActivity extends AppCompatActivity {
 
         webView.setWebViewClient(new WebViewClient() {
             @Override
+            public void onPageStarted(WebView view, String url, Bitmap favicon) {
+                progressBar.setVisibility(View.VISIBLE);
+
+                super.onPageStarted(view, url, favicon);
+            }
+
+            @Override
             public boolean shouldOverrideUrlLoading(WebView view, String url) {
                 view.loadUrl(url);
                 return true;
@@ -41,13 +53,14 @@ public class WebPageActivity extends AppCompatActivity {
 
             @Override
             public void onPageFinished(WebView view, String url) {
+                progressBar.setVisibility(View.GONE);
                 // Page loading finished
                 super.onPageFinished(view, url);
             }
         });
 
         // Load a web page
-        webView.loadUrl("https://flowise-e0qx.onrender.com/chatbot/c096e4b6-c68d-4b9a-9637-aa01b647df66");
+        webView.loadUrl(url);
 
     }
 }
