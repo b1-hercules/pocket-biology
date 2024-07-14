@@ -38,6 +38,11 @@
 
     </androidx.appcompat.widget.Toolbar>
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topbar">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -70,11 +75,76 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/roboto_medium"
                     android:layout_marginTop="10dp"
-                    android:text="1. Menjelaskan konsep dasar genetika, seperti kromosom, DNA, gen, alel, dan variasi genetik.\n\n2. Menganalisis pola pewarisan sifat monohibrid, dihibrid, dan polihibrid dengan menggunakan hukum Mendel, tabel silang, dan peta kromosom.\n\n3. Menjelaskan mekanisme mutasi, rekombinasi, dan transformasi genetik pada prokariot dan eukariot.\n\n4. Menjelaskan prinsip dan aplikasi bioteknologi, seperti rekayasa genetik, kloning, transgenik, dan terapi gen.\n\n5. Menilai dampak sosial, etis, dan lingkungan dari perkembangan ilmu genetika dan bioteknologi."
+                    android:text="\tPada akhir fase F, peserta didik memiliki kemampuan mendeskripsikan bioproses yang terjadi dalam sel, dan menganalisis keterkaitan struktur organ pada sistem organ dengan fungsinya serta kelainan atau gangguan yang muncul pada sistem organ tersebut. Selanjutnya peserta didik memiliki kemampuan menerapkan konsep pewarisan sifat, pertumbuhan dan perkembangan dalam kehidupan sehari-hari dan mengevaluasi gagasan baru mengenai evolusi. Konsep-kosep yang dipelajari diterapkan untuk memecahkan masalah kehidupan yang diselesaikan dengan keterampilan proses secara mandiri hingga menciptakan ide atau produk untuk mengatasi permasalah tersebut. Melalui keterampilan proses juga dibangun sikap ilmiah dan profil pelajar pancasila khususnya mandiri, bernalar kritis, kreatif dan bergotong royong."
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textColor="@color/ms_black"
+                    android:layout_marginTop="12dp"
+                    android:text="Alur Tujuan Pembelajaran Genetika"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"
+                    android:layout_marginTop="10dp"
+                    android:text="12.13 Menciptakan model struktur DNA dan RNA dengan berbagai media."
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"
+                    android:layout_marginTop="10dp"
+                    android:text="12.14 Mendeskripsikan replikasi DNA dengan menggambar bagan."
+                    android:textSize="18sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"
+                    android:layout_marginTop="10dp"
+                    android:text="12.15 Menganalisis antara DNA, gem dan kromosom dengan menggambar struktuk penyusun kromosom."
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"
+                    android:layout_marginTop="10dp"
+                    android:text="12.16 Menganalisis proses sintesis protein dengan menggambar tahapan proses sintesis protein."
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"
+                    android:layout_marginTop="10dp"
+                    android:text="12.17 Mendeskripsikan hukum mendel dengan membuat cakram genetika."
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"
+                    android:layout_marginTop="10dp"
+                    android:text="12.18 Menerapkan hukum Mendel dengan menyajikan laporan hasil percobaan kancing genetika."
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"
+                    android:layout_marginTop="10dp"
+                    android:text="12.19 Menganalisis pola-pola pewarisan sifat pada manusia dengan menyusun peta silsilah keluarga."
                     android:textSize="18sp" />
             </LinearLayout>
         </LinearLayout>
 
     </LinearLayout>
+    </ScrollView>
 
 </RelativeLayout>

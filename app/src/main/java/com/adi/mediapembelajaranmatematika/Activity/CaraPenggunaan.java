@@ -18,8 +18,6 @@ import com.stepstone.stepper.StepperLayout;
 import com.stepstone.stepper.VerificationError;
 
 public class CaraPenggunaan extends AppCompatActivity {
-
-    private BottomNavigationView bottomNavigationView;
     private ImageView btn_kembali;
 
     @Override
@@ -30,7 +28,6 @@ public class CaraPenggunaan extends AppCompatActivity {
     }
 
     private void init() {
-
         btn_kembali = findViewById(R.id.btn_kembali);
         btn_kembali.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,25 +36,7 @@ public class CaraPenggunaan extends AppCompatActivity {
             }
         });
 
+        // Menampilkan hanya FragmentCaraPenggunaan1
         getSupportFragmentManager().beginTransaction().replace(R.id.framelayout_penggunaan, new FragmentCaraPenggunaan1()).commit();
-        bottomNavigationView = findViewById(R.id.btn_topnavigation);
-        BottomNavigationView.OnNavigationItemSelectedListener navigasi = new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                Fragment fragment = null;
-                switch (item.getItemId()) {
-                    case R.id.btn_back:
-                        fragment = new FragmentCaraPenggunaan1();
-                        break;
-                    case R.id.btn_next:
-                        fragment = new FragmentCaraPenggunaan2();
-                        break;
-                }
-                getSupportFragmentManager().beginTransaction().replace(R.id.framelayout_penggunaan, fragment).commit();
-                return true;
-            }
-        };
-
-        bottomNavigationView.setOnNavigationItemSelectedListener(navigasi);
     }
 }

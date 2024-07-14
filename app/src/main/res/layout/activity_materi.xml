@@ -69,10 +69,9 @@
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
                     android:fontFamily="@font/roboto_medium"
-                    android:text="Materi Genetik"
+                    android:text="Materi Genetika"
                     android:textColor="@color/colorBlack"
-                    android:textSize="20sp" />
-
+                    android:textSize="28sp" />
 
                 <WebView
                     android:visibility="gone"
@@ -80,122 +79,144 @@
                     android:layout_width="match_parent"
                     android:layout_height="250sp" />
 
-
                 <Button
                     android:id="@+id/btn_open_video"
-                    android:layout_gravity="center_horizontal"
-                    android:text="Open Video"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-
-
-                 <LinearLayout
-                     android:orientation="vertical"
-                     android:id="@+id/linear_image"
-                     android:layout_width="match_parent"
-                     android:layout_height="match_parent"/>
-
-<!--                <TextView
-                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="1. Kromosom"
-                    android:textStyle="bold"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="4dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginEnd="16dp"/>
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:text="Lihat Materi Pembuka"
+                    android:drawableLeft="@drawable/ic_youtube_vector" />
 
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Kromosom adalah struktur yang terdiri dari DNA dan protein yang ditemukan di dalam inti sel, berperan penting dalam membawa informasi genetik esensial untuk pertumbuhan, perkembangan, dan fungsi organisme. Strukturnya melibatkan DNA yang membungkus sekitar protein histon, membentuk nukleosom. Kromosom memiliki berbagai bentuk berdasarkan posisi sentromer, termasuk metasentrik, submetasentrik, akrosentrik, dan telosentrik, dan bisa dilihat dalam kondisi paling terkondensasi selama pembelahan sel. Rumus kromosom, seperti 46,XX untuk wanita dan 46,XY untuk pria, menunjukkan jumlah dan jenis kromosom dalam sel. Spesies berbeda memiliki jumlah kromosom yang beragam, contohnya Drosophila melanogaster dengan 8 kromosom dan Oryza sativa dengan 24 kromosom."
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginEnd="16dp"
-                    android:textIsSelectable="true"
-                    />
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Daftar Materi"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="2. Gen"
-                    android:textStyle="bold"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="4dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginEnd="16dp"/>
+              <!-- Tambahkan list Button disini -->
 
-                <TextView
-                    android:layout_width="match_parent"
+                <Button
+                    android:id="@+id/btn_dashboard"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Gen merupakan unit dasar warisan yang berlokasi pada kromosom, terdiri dari urutan DNA yang mengodekan informasi untuk sintesis protein atau RNA. Struktur gen mencakup daerah pengkodean (eksion) yang dibatasi oleh daerah tidak pengkodean (introns) dan diatur oleh promotor. Gen memiliki sifat seperti dominan, resesif, kodominan, dan interaksi genetik lainnya yang berpengaruh terhadap ekspresi fenotipik."
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginEnd="16dp"
-                    android:textIsSelectable="true"
-                    />
+                    android:background="@android:color/transparent"
+                    android:text="Dashboard"
+                    android:drawableLeft="@drawable/ic_external_link"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"/>
+                <Button
+                    android:id="@+id/btn_materi_genetik"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:text="Materi Genetik"
+                    android:drawableLeft="@drawable/ic_external_link"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"/>
+                <Button
+                    android:id="@+id/btn_kromosom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:text="Kromosom"
+                    android:drawableLeft="@drawable/ic_external_link"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"/>
 
-                <TextView
-                    android:layout_width="match_parent"
+                <Button
+                    android:id="@+id/btn_dna"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="3. DNA"
-                    android:textStyle="bold"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="4dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginEnd="16dp"/>
+                    android:background="@android:color/transparent"
+                    android:text="DNA"
+                    android:drawableLeft="@drawable/ic_external_link"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"/>
 
-                <TextView
-                    android:layout_width="match_parent"
+                <Button
+                    android:id="@+id/btn_rna"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="DNA (Deoxyribonucleic Acid) adalah molekul pembawa informasi genetik, dikenal dengan struktur ganda heliks yang stabil. Strukturnya terdiri dari dua untai polinukleotida yang terpilin, dengan pasangan basa adenin (A) dengan timin (T) dan sitosin (C) dengan guanin (G). Replikasi DNA bersifat semi-konservatif, di mana setiap untai baru terdiri dari satu untai lama dan satu yang baru disintesis. Enzim utama dalam replikasi DNA meliputi DNA polimerase, helikase, ligase, dan primase."
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginEnd="16dp"
-                    android:textIsSelectable="true"
-                    />
+                    android:background="@android:color/transparent"
+                    android:text="RNA"
+                    android:drawableLeft="@drawable/ic_external_link"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"/>
 
-                <TextView
-                    android:layout_width="match_parent"
+                <Button
+                    android:id="@+id/btn_gen_dan_alel"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="4. RNA"
-                    android:textStyle="bold"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="4dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginEnd="16dp"
-                    android:textIsSelectable="true"
-                    />
+                    android:background="@android:color/transparent"
+                    android:text="Gen dan Alel"
+                    android:drawableLeft="@drawable/ic_external_link"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"/>
 
-                <TextView
-                    android:layout_width="match_parent"
+                <Button
+                    android:id="@+id/btn_sintesis_protein"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="RNA (Ribonucleic Acid) adalah molekul yang terlibat dalam sintesis protein dan proses genetik lainnya. Berbeda dengan DNA, RNA adalah untai tunggal yang terdiri dari ribonukleotida, dengan uracil (U) menggantikan timin (T). Terdapat tiga jenis utama RNA, yaitu mRNA (messenger RNA), tRNA (transfer RNA), dan rRNA (ribosomal RNA), yang masing-masing memiliki peran khusus dalam sintesis protein."
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginEnd="16dp"
-                    android:textIsSelectable="true"
-                    />
+                    android:background="@android:color/transparent"
+                    android:text="Sintesis Protein"
+                    android:drawableLeft="@drawable/ic_external_link"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"/>
 
-                <TextView
-                    android:layout_width="match_parent"
+                <Button
+                    android:id="@+id/btn_pewarisan_sifat"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="5. Sintesis Protein"
-                    android:textStyle="bold"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="4dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginEnd="16dp"/>
+                    android:background="@android:color/transparent"
+                    android:text="Pewarisan Sifat"
+                    android:drawableLeft="@drawable/ic_external_link"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"/>
 
-                <TextView
-                    android:layout_width="match_parent"
+                <Button
+                    android:id="@+id/btn_pautan"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Sintesis protein adalah proses pembentukan protein dari informasi genetik melalui transkripsi dan translasi. Transkripsi mengubah DNA menjadi mRNA, sedangkan translasi mengubah mRNA menjadi rantai asam amino protein. Kode genetik, yang terdiri dari urutan basa pada DNA atau RNA, menentukan urutan asam amino dalam protein. Setiap tiga basa (kodon) mengkode satu asam amino, dengan ATG mengkode untuk metionin, sering dijadikan kodon awal untuk sintesis protein. Kedua rantai DNA berperan dalam kodifikasi genetik, namun hanya satu rantai yang digunakan sebagai templat untuk transkripsi."
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginEnd="16dp"
-                    android:textIsSelectable="true"
-                    />-->
+                    android:background="@android:color/transparent"
+                    android:text="Pautan"
+                    android:drawableLeft="@drawable/ic_external_link"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <Button
+                    android:id="@+id/btn_hereditas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:text="Hereditas"
+                    android:drawableLeft="@drawable/ic_external_link"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <Button
+                    android:id="@+id/btn_mutasi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:text="Mutasi"
+                    android:drawableLeft="@drawable/ic_external_link"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"/>
 
             </LinearLayout>
 

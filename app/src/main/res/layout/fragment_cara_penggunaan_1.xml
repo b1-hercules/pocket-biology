@@ -20,7 +20,7 @@
                 android:layout_height="330dp"
                 android:layout_gravity="center_horizontal"
                 android:elevation="5dp"
-                android:src="@drawable/menu" />
+                android:src="@drawable/penjelasan_menu_new" />
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
@@ -48,7 +48,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="5dp"
                         android:fontFamily="@font/roboto_medium"
-                        android:text="1.\tMenu Kompetensi Dasar"
+                        android:text="1.\tMenu Capaian Pembelajaran"
                         android:textSize="13sp" />
 
                     <TextView
@@ -56,7 +56,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="5dp"
                         android:fontFamily="@font/roboto_medium"
-                        android:text="\tMenu Kompetensi Dasar: digunakan untuk menampilkan kompetesi dasar materi matimatika matriks. di halaman ini pengguna dapat melihat kompetensi dasar tersebut dengan cara klik tombol kompetensi dasar."
+                        android:text="\tMenu Capaian Pembelajaran: digunakan untuk menampilkan kompetesi dasar materi matimatika matriks. di halaman ini pengguna dapat melihat capaian pembelajaran tersebut dengan cara klik tombol capaian pembelajaran."
                         android:textSize="12sp" />
 
                     <TextView
@@ -71,14 +71,14 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="5dp"
                         android:fontFamily="@font/roboto_medium"
-                        android:text="\tMenu Materi: digunakan untuk menampilkan materi matimatika matriks. di halaman ini pengguna dapat melihat materi tersebut dengan cara klik tombol materi."
+                        android:text="\tMenu Materi: digunakan untuk menampilkan materi Biologi Genetika. di halaman ini pengguna dapat melihat materi tersebut dengan cara klik tombol materi."
                         android:textSize="12sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/roboto_medium"
-                        android:text="3.\tMenu Kuis"
+                        android:text="3.\tMenu Tanya AI"
                         android:textSize="13sp" />
 
                     <TextView
@@ -86,14 +86,14 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="5dp"
                         android:fontFamily="@font/roboto_medium"
-                        android:text="\tMenu Kuis: digunakan untuk menampilkan halaman kuis matimatika matriks. di halaman ini pengguna dapat memilih jenis kuis, di halaman ini kuis terdiri dari dua yaitu, kuis pilihan ganda dan kuis essay. Di halamanan tersebut pengguna bisa memilih kuis yang diinginkan."
+                        android:text="\tMenu Tanya AI: digunakan untuk menampilkan halaman tanya jawab dengan AI. di halaman ini pengguna dapat bertanya kepada AI tentang materi yang di ajarkan. Untuk mengakses halaman ini pengguna harus klik tombol tanya AI di aplikasi."
                         android:textSize="12sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/roboto_medium"
-                        android:text="4.\tMenu Nilai"
+                        android:text="4.\tMenu Petunjuk Penggunaan"
                         android:textSize="13sp" />
 
                     <TextView
@@ -101,22 +101,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="5dp"
                         android:fontFamily="@font/roboto_medium"
-                        android:text="\tMenu Nilai: digunakan untuk menampilkan lis nilai dari siswa yang telah menjawab soal-soal kuis yang di sediakan. di halaman ini pengguna dapat melihat lis nama dan nilai dari siswa yang telah menyelesaikan soal kuis. Untuk mengakses halaman ini pengguna harus klik tombol nilai di aplikasi."
-                        android:textSize="12sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/roboto_medium"
-                        android:text="5.\tMenu Cara Penggunaan"
-                        android:textSize="13sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="5dp"
-                        android:fontFamily="@font/roboto_medium"
-                        android:text="\tMenu Cara Penggunaan: digunakan untuk menampilkan cara penggunaan aplikasi media pembelajaran Pocket Biology."
+                        android:text="\tMenu Petunjuk Penggunaan: digunakan untuk menampilkan cara penggunaan aplikasi media pembelajaran Pocket Biology."
                         android:textSize="12sp" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
